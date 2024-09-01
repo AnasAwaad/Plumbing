@@ -17,5 +17,14 @@ public class TestimonialConfig : IEntityTypeConfiguration<Testimonial>
 		builder.Property(e => e.FileType).IsRequired();
 		builder.Property(e => e.FileName).IsRequired();
 
+		builder.HasData(new Testimonial
+		{
+			Id = 1,
+			Comment = "test comment",
+			Title = "test",
+			FileType = "test",
+			FileName = "test",
+			FullName = "test",
+		});
 	}
 }

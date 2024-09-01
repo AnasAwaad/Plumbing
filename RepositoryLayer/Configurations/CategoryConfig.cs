@@ -11,5 +11,11 @@ public class CategoryConfig : IEntityTypeConfiguration<Category>
 		builder.Property(e => e.UpdatedDate).HasMaxLength(10);
 		builder.Property(e => e.RowVersion).IsRowVersion();
 		builder.Property(e => e.Name).IsRequired().HasMaxLength(50);
+
+		builder.HasData(new Category
+		{
+			Id = 1,
+			Name = "test category",
+		});
 	}
 }

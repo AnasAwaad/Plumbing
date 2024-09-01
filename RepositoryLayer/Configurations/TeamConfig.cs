@@ -16,5 +16,17 @@ public class TeamConfig : IEntityTypeConfiguration<Team>
 		builder.Property(e => e.FullName).IsRequired();
 		builder.Property(e => e.FileType).IsRequired();
 
+		builder.HasData(new Team
+		{
+			Id = 1,
+			FullName = "full name",
+			Title = "test title",
+			FileName = "test",
+			FileType = "test",
+			Twitter = "test twitter",
+			Instagram = "test instagram",
+			Facebook = "test facebook",
+			LinkedIn = "test linkedin",
+		});
 	}
 }

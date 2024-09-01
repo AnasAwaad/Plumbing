@@ -14,5 +14,13 @@ public class PortfolioConfig : IEntityTypeConfiguration<Portfolio>
 		builder.Property(e => e.FileType).IsRequired();
 		builder.Property(e => e.FileName).IsRequired();
 
+		builder.HasData(new Portfolio
+		{
+			Id = 1,
+			CategoryId = 1,
+			FileName = "test",
+			FileType = "test",
+			Title = "test",
+		});
 	}
 }

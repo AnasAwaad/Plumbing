@@ -14,5 +14,14 @@ public class ContactUsConfig : IEntityTypeConfiguration<ContactUs>
 		builder.Property(e=>e.Email).IsRequired().HasMaxLength(100);
 		builder.Property(e=>e.Call).IsRequired().HasMaxLength(13);
 		builder.Property(e=>e.Map).IsRequired();
+
+		builder.HasData(new ContactUs
+		{
+			Id = 1,
+			Location = "egypt, giza , 6-october",
+			Call = "01129426838",
+			Email = "anas.shaban.awaad@gmail.com",
+			Map = "test map",
+		});
 	}
 }

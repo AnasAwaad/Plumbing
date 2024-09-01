@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\DataSeed\" />
     <Folder Include="UnitOfWork\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
