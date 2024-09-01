@@ -5,10 +5,10 @@ public class AboutUs : BaseEntity
 {
 	public string Header { get; set; } = null!;
 	public string Description { get; set; } = null!;
-	public string Clients { get; set; } = null!;
-	public string Projects { get; set; } = null!;
-	public string HoursOfSupport { get; set; } = null!;
-	public string HardWorkers { get; set; } = null!;
+	public int Clients { get; set; }
+	public int Projects { get; set; }
+	public int HoursOfSupport { get; set; } 
+	public int HardWorkers { get; set; }
 	public string FileType { get; set; } = null!;
 	public string FileName { get; set; } = null!;
 
