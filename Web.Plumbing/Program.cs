@@ -1,3 +1,4 @@
+using RepositoryLayer.Extensions;
 namespace Web.Plumbing;
 
 public class Program
@@ -8,6 +9,7 @@ public class Program
 
 		// Add services to the container.
 		builder.Services.AddControllersWithViews();
+		builder.Services.LoadRepositoryLayerExtensions(builder.Configuration);
 
 		var app = builder.Build();
 
