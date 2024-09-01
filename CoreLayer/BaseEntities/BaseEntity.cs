@@ -1,5 +1,5 @@
 ﻿namespace CoreLayer.BaseEntities;
-public class BaseEntity
+public class BaseEntity:IBaseEntity
 {
     public BaseEntity()
     {
